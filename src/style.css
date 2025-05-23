@@ -1,0 +1,362 @@
+/* Font Imports */
+@font-face {
+    font-family: 'Breathe Fire IV';
+    src: url('assets/fonts/Breathe Fire IV.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReadexPro';
+    src: url('assets/fonts/ReadexPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Reset */
+html {
+    background-color: black;
+}
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, li, a, input, button {
+    font-family: 'ReadexPro', sans-serif; /* Apply ReadexPro to all text */
+}
+h1, h2, h3 {
+    font-family: 'Breathe Fire IV', serif; /* Apply Breathe Fire IV to headings */
+}
+
+header {
+    width: 100%;
+    background-color: #000; /* Black background for header */
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the entire navbar content */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Black background for navbar */
+}
+.nav-links {
+    display: flex;
+    gap: 20px; /* Add spacing between links */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #e0e0e0; /* Set link color to light gray */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #9E8FBC; /* Change color on hover */
+}
+.logo {
+    margin: 0 40px; /* Add spacing around the logo */
+}
+.logo img {
+    height: 100px; /* Adjust logo size */
+    transform: translateY(67%); /* Ensure the logo hangs over by 50% */
+    width: auto; /* Maintain aspect ratio */
+    margin-top: -70px;
+}
+
+
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('/src/assets/challenger-stands-front-spooky-castle-illustration_purple.jpg') no-repeat center center;
+    background-size: cover;
+}
+.landing h1 {
+    font-size: 8rem;
+    color: #fff; /* White text color */
+    text-align: center;
+    text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.911); /* Add shadow for better readability */
+}
+
+.split-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh; /* Ensure the section has a height */
+}
+.split-content .left-content {
+    display: flex;
+    flex-direction: column; /* Stack the title and carousel vertically */
+    align-items: center; /* Center everything horizontally */
+    justify-content: center; /* Center everything vertically */
+    text-align: center; /* Center-align the text */
+    gap: 20px; /* Add spacing between the title and the carousel */
+    background: url('assets/magician-walks-magical-tree-houses-illustration_purple.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%; /* Ensure the left section fills the parent's height */
+    width: 60vw;
+}
+.split-content .left-content h2 {
+    margin: 0; /* Remove default margin for better alignment */
+    font-size: 2rem; /* Keep the title visually distinct */
+    color: white;
+    text-shadow: #000 0px 0px 10px; /* Add shadow for better readability */
+}
+.split-content .right-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    background: url('assets/angel-quiet-primeval-forest-digital-painting_purple.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%; /* Ensure the right section fills the parent's height */
+    width: 40vw; /* Adjust width to fit the layout */
+    text-align: center; /* Center-align text */
+    gap: 20px; /* Add spacing between elements */
+}
+.split-content .right-content h2 {
+    margin-top: 10px;
+    font-size: 2rem; /* Keep the title visually distinct */
+    color: white;
+    text-shadow: #000 0px 0px 10px; /* Add shadow for better readability */
+}
+.split-content .right-content p {
+    color: white;
+    text-shadow: #000 0px 0px 10px; /* Add shadow for better readability */
+    margin: 0 20px; /* Add horizontal padding for better readability */
+    font-size: 1rem; /* Adjust font size for better visibility */
+}
+.split-content iframe {
+    width: 80%; /* Ensure the iframe spans the full width */
+    height: 300px; /* Set a consistent height for the iframe */
+    border: none; /* Remove border around the iframe */
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background for footer */
+}
+.footer-split {
+    display: flex;
+    justify-content: space-around; /* Space sections evenly */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #000; /* Black background for footer */
+}
+.footer-content,
+.footer-images {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 40%; /* Adjust width to bring sections closer to the center */
+    text-align: center; /* Center-align text */
+}
+.footer-content h1,
+.footer-images h1 {
+    color: #9E8FBC; /* White text color */
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+.footer-content a,
+.footer-images a {
+    color: #D3D3D9; /* Light gray link color */
+    text-decoration: none; /* Remove underline from links */
+}
+.footer-content p {
+    color: #9E8FBC;
+    text-align: center;
+    margin-top: 10px; /* Add spacing above the paragraph */
+    padding: 10px;
+}
+.footer-images h2 {
+    color: #9E8FBC;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px; /* Add spacing above the paragraph */
+    padding: 10px;
+}
+.footer-content a:hover,
+.footer-images a:hover {
+    color: #694A9E; /* Change color on hover */
+}
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Align icons vertically */
+    gap: 15px; /* Add spacing between icons */
+    margin-top: 10px; /* Add spacing above the icons */
+}
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Set icon size */
+    height: 40px;
+}
+.social-icons img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Add hover effect */
+}
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.carousel {
+    --items: 10;
+    --carousel-duration: 80s;
+    @media (width > 600px) {
+        --carousel-duration: 80s;
+    }
+    --carousel-width: min(
+        80vw,
+        50vw
+    ); /* note - it will "break" if it gets too wide and there aren't enough items */
+    --carousel-item-width: 280px;
+    --carousel-item-height: 400px;
+    --carousel-item-gap: 1.5rem;
+
+    --clr-cta: rgb(0, 132, 209);
+
+    position: relative;
+    width: var(--carousel-width);
+    height: var(--carousel-item-height);
+    overflow: clip;
+
+    &[mask] {
+        /* fade out on sides */
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10% 90%,
+            transparent
+        );
+    }
+
+    &[reverse] > article {
+        animation-direction: reverse;
+    }
+    /* hover pauses animation */
+    &:hover > article {
+        animation-play-state: paused;
+    }
+}
+.carousel > article {
+    position: absolute;
+    top: 0;
+    left: calc(100% + var(--carousel-item-gap));
+    width: var(--carousel-item-width);
+    height: 90%;
+    display: grid;
+    grid-template-rows: 200px auto 1fr auto;
+    gap: 0.25rem;
+    border: 1px solid light-dark(rgba(0 0 0 / 0.25), rgba(255 255 255 / 0.15));
+
+    padding-block-end: 1rem;
+    border-radius: 10px;
+    background: light-dark(white, rgba(255 255 255 / 0.05));
+    color: white;
+
+    /* animation */
+    will-change: transform;
+    animation-name: marquee;
+    animation-duration: var(--carousel-duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(
+        var(--carousel-duration) / var(--items) * 1 * var(--i) * -1
+    );
+    &:nth-child(1) {
+        --i: 0;
+    }
+    &:nth-child(2) {
+        --i: 1;
+    }
+    &:nth-child(3) {
+        --i: 2;
+    }
+    &:nth-child(4) {
+        --i: 3;
+    }
+    &:nth-child(5) {
+        --i: 4;
+    }
+    &:nth-child(6) {
+        --i: 5;
+    }
+    &:nth-child(7) {
+        --i: 6;
+    }
+    &:nth-child(8) {
+        --i: 7;
+    }
+    &:nth-child(9) {
+        --i: 8;
+    }
+    &:nth-child(10) {
+        --i: 9;
+    }
+}
+.carousel h3 {
+    font-size: 1.5rem;;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px 10px 0 0;
+}
+.carousel > article > *:not(img) {
+    padding: 0 1rem;
+}
+.carousel > article > div {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: subgrid;
+    font-size: 0.8rem;
+}
+.carousel > article h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-block: 0.75rem 0.25rem;
+    margin: 0;
+}
+.carousel > article p {
+    margin: 0;
+}
+.carousel > article a {
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    place-self: start;
+    transition: 150ms ease-in-out;
+    &:hover,
+    &:focus-visible {
+        background-color: white;
+        color: #000;
+        outline: #000;
+    }
+}
+
+@keyframes marquee {
+    100% {
+        transform: translateX(
+            calc(
+                (var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) *
+                    -1
+            )
+        );
+    }
+}
