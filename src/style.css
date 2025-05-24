@@ -132,7 +132,7 @@ header {
 }
 .split-content iframe {
     width: 80%; /* Ensure the iframe spans the full width */
-    height: 300px; /* Set a consistent height for the iframe */
+    height: 400px; /* Set a consistent height for the iframe */
     border: none; /* Remove border around the iframe */
 }
 

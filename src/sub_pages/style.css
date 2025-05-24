@@ -1,0 +1,236 @@
+/* Font Imports */
+@font-face {
+    font-family: 'Breathe Fire IV';
+    src: url('/src/assets/fonts/Breathe Fire IV.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReadexPro';
+    src: url('/src/assets/fonts/ReadexPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Reset */
+html {
+    background-color: black;
+}
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, li, a, input, button {
+    font-family: 'ReadexPro', sans-serif; /* Apply ReadexPro to all text */
+}
+h1, h2, h3 {
+    font-family: 'Breathe Fire IV', serif; /* Apply Breathe Fire IV to headings */
+}
+
+header {
+    width: 100%;
+    background-color: #000; /* Black background for header */
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the entire navbar content */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Black background for navbar */
+}
+.nav-links {
+    display: flex;
+    gap: 20px; /* Add spacing between links */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #e0e0e0; /* Set link color to light gray */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #9E8FBC; /* Change color on hover */
+}
+.logo {
+    margin: 0 40px; /* Add spacing around the logo */
+}
+.logo img {
+    height: 100px; /* Adjust logo size */
+    transform: translateY(67%); /* Ensure the logo hangs over by 50% */
+    width: auto; /* Maintain aspect ratio */
+    margin-top: -70px;
+}
+
+main {
+    background-image: url("/src/assets/magician-walks-magical-tree-houses-illustration_purple.jpg");
+    background-size: cover;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; /* Space between the sections */
+    width: 100%;
+    height: 90vh; /* Full viewport height */
+    position: relative; /* For positioning child elements */
+    overflow: hidden; /* Crop any overflowing content */
+}
+.landing-text,
+.landing-images,
+.landing-sheet {
+    height: 100%; /* Make each section equal to the height of the webpage */
+    flex: 1; /* Distribute space equally among the sections */
+    display: flex;
+    flex-direction: column; /* Stack content vertically within each section */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.landing-images {
+    position: relative; /* For positioning child elements */
+}
+
+.landing .smoke-imgs {
+    position: absolute;
+    width: 100%; /* Make smoke images span the full width of the webpage */
+    bottom: 0px; /* Position at the bottom of the landing section */
+    height: 140%;
+    z-index: 2; /* Lowest z-index, under everything except the character image */
+}
+
+.landing .character-image {
+    position: relative;
+    z-index: 1; /* Ensure it appears above the smoke images */
+    height: 85%; /* Adjust height as needed */
+    object-fit: contain; /* Ensure the image fits within its container */
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%); /* Fade out at the bottom */
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%); /* Webkit support for mask */
+}
+
+.landing-sheet embed {
+    width: 90%; /* Adjust the width of the PDF viewer */
+    height: 75%; /* Adjust the height of the PDF viewer */
+    border: none; /* Remove border around the embed viewer */
+    z-index: 3;
+    margin-left: -200px;
+}
+.landing-sheet h2, p {
+    margin-left: -200px;
+    z-index: 3;
+}
+.landing-sheet h2{
+    color: #ffffff; /* White text color */
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5px; /* Add spacing below the heading */
+}
+.landing-sheet a {
+    color: #ffffff; /* White text color */
+    font-size: 1rem;
+    z-index: 3;
+    margin-left: -200px;
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing below the link */
+    text-decoration: none; /* Remove underline from the link */
+}
+.landing-text {
+    z-index: 3;
+    color: #ffffff; /* White text color */
+    padding-left: 150px;
+    margin-right: -150px;
+}
+.landing-text h1 {
+    font-size: 3rem;
+}
+.landing-text p {
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    overflow-wrap: break-word; /* Ensure text wraps to the next line */
+    text-align: center; /* Center-align the text */
+    padding: 0 10px; /* Add padding to prevent text from touching the edges */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    padding-top: 20px;
+    text-shadow: #000 0px 0px 5px; /* Add a shadow effect to the text */
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background for footer */
+}
+.footer-split {
+    display: flex;
+    justify-content: space-around; /* Space sections evenly */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #000; /* Black background for footer */
+}
+.footer-content,
+.footer-images {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 40%; /* Adjust width to bring sections closer to the center */
+    text-align: center; /* Center-align text */
+}
+.footer-content h1,
+.footer-images h1 {
+    color: #9E8FBC; /* White text color */
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+.footer-content a,
+.footer-images a {
+    color: #D3D3D9; /* Light gray link color */
+    text-decoration: none; /* Remove underline from links */
+}
+.footer-content p {
+    color: #9E8FBC;
+    text-align: center;
+    margin-top: 10px; /* Add spacing above the paragraph */
+    padding: 10px;
+}
+.footer-images h2 {
+    color: #9E8FBC;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px; /* Add spacing above the paragraph */
+    padding: 10px;
+}
+.footer-content a:hover,
+.footer-images a:hover {
+    color: #694A9E; /* Change color on hover */
+}
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Align icons vertically */
+    gap: 15px; /* Add spacing between icons */
+    margin-top: 10px; /* Add spacing above the icons */
+}
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Set icon size */
+    height: 40px;
+}
+.social-icons img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Add hover effect */
+}
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
