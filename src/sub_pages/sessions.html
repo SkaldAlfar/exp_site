@@ -3,48 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Epos Ex Prosa</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+    <audio autoplay onloadedmetadata="this.volume=0.35;">
+        <source src="assets/music/notdndmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <header>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="/src/campaign.html">Campaign</a></li>
-                <li><a href="/src/mtg.html">MtG</a></li>
+                <li class="dropdown">
+                    <a href="campaign.html" class="campaign-btn">Campaign</a>
+                    <ul class="dropdown-content">
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="sessions.html">Sessions</a></li>
+                        <li><a href="sub_pages/mizani.html">The Continent: Mizani</a></li>
+                    </ul>
+                </li>
+                <li><a href="mtg.html">MtG</a></li>
+                <li><a href="">Supplements</a></li>
             </ul>
             <div class="logo">
-                <a href="/src/index.html">
-                    <img src="/src/assets/PFP 2 transparent.png" alt="Company Logo">
+                <a href="index.html">
+                    <img src="../assets/PFP 2 transparent.png" alt="Company Logo">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="/src/about.html">About</a></li>
-                <li><a href="/src/updates.html">Updates</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="../community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="landing">
-            <img class="smoke-imgs" src="/src/assets/extra_images/smoke_purple.png" alt="Smoke Purple">
-            <img class="smoke-imgs" src="/src/assets/extra_images/smoke_white.png" alt="Smoke White">
-            <div class="landing-text">
-                <h1>Kai</h1>
-                <p>Kai is a character in the game,<br>known for his unique abilities and captivating story.</p>
-                <h1 style="padding-top: 50px;">Spotify Playlist</h1>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/35W2RsUm9AJniRfs4HBnNb?utm_source=generator&theme=0" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-            <div class="landing-images">
-                <img class="character-image" src="/src/assets/character_png/Griffin_Char.png" alt="Elret">
-            </div>
-            <div class="landing-sheet">
-                <h2>Current Character Sheet</h2>
-                <a href="https://app.demiplane.com/nexus/daggerheart/character-sheet/0afe9446-3952-471d-a00a-d3380e917d14" target="_blank">View the sheet on Demiplane</a>
-                <embed class="embed-viewer" src="/src/assets/pdf/kai_1.pdf" type="application/pdf">
-            </div>
+            <h1>Sessions</h1>
         </section>
+        
     </main>
 
     <footer>
@@ -99,6 +99,5 @@
 
     <!-- Connect to app.js -->
     <script src="scripts/app.js"></script>
-
 </body>
 </html>
