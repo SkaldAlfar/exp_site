@@ -1,4 +1,4 @@
-const puzzleId = 0;
+const puzzleId = 1;
 const API_URL = `https://siteyiqu5i.execute-api.us-east-2.amazonaws.com/default/puzzle_db_access?puzzle_id=${puzzleId}`;
 
 let correctAnswer = "";
