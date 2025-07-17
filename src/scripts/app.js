@@ -22,3 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Change image every 3 seconds
     setInterval(showNextItem, 3000);
 });
+
+// let blink =
+//     document.getElementById('blink');
+
+// setInterval(function () {
+//     blink.style.opacity =
+//         (blink.style.opacity == 0 ? 1 : 0);
+// }, 2000); 
