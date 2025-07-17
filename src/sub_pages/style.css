@@ -1,14 +1,14 @@
 /* Font Imports */
 @font-face {
     font-family: 'Breathe Fire IV';
-    src: url('/src/assets/fonts/Breathe Fire IV.otf') format('truetype');
+    src: url('../assets/fonts/Breathe Fire IV.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ReadexPro';
-    src: url('/src/assets/fonts/ReadexPro-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/ReadexPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
