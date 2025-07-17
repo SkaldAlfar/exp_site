@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epos Ex Prosa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <audio autoplay onloadedmetadata="this.volume=0.35;">
-        <source src="assets/music/notdndmusic.mp3" type="audio/mpeg">
+        <source src="../assets/music/notdndmusic.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -17,32 +17,42 @@
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="campaign.html" class="campaign-btn">Campaign</a>
+                    <a href="../campaign.html" class="campaign-btn">Campaign</a>
                     <ul class="dropdown-content">
                         <li><a href="characters.html">Characters</a></li>
                         <li><a href="sessions.html">Sessions</a></li>
-                        <li><a href="sub_pages/mizani.html">The Continent: Mizani</a></li>
+                        <li><a href="mizani.html">The Continent: Mizani</a></li>
                     </ul>
                 </li>
-                <li><a href="mtg.html">MtG</a></li>
-                <li><a href="">Supplements</a></li>
+                <li><a href="../mtg.html">MtG</a></li>
+                <li><a href="https://www.drivethrurpg.com/en/product/498979/daggerheart-corebook-nexus-pdf?src=demiplanedaggerheartlisting&affiliate_id=4738976">Supplements</a></li> <!-- Make this link to DTRPG -->
             </ul>
             <div class="logo">
-                <a href="index.html">
-                    <img src="assets/PFP 2 transparent.png" alt="Company Logo">
+                <a href="../index.html">
+                    <img src="../assets/PFP 2 transparent.png" alt="Company Logo">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="puzzles.html">Puzzles</a></li>
                 <li><a href="../community.html">Community</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="../about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="landing">
-            <h1>Schedule</h1>
+        <section class="landing" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <!-- Tier 1: Title -->
+            <h1 style="font-size:xxxx-large;">GenCon Puzzle</h1>
+
+            <!-- Tier 2: Prompt -->
+            <p id="prompt" style="max-width: 600px; text-align: center; font-size: x-large; color: whitesmoke;">Loading...</p>
+
+            <!-- Tier 3: Input and Button -->
+            <form id="answerForm" style="display: flex; gap: 1rem;">
+                <input style="font-size: large;" type="text" id="answerInput" placeholder="Enter your answer here">
+                <button style="font-size: large;" id="submitBtn">Submit</button>
+            </form>
         </section>
         
     </main>
@@ -97,7 +107,6 @@
         </section>
     </footer>
 
-    <!-- Connect to app.js -->
-    <script src="scripts/app.js"></script>
+    <script src="../scripts/puzzles.js" defer></script>
 </body>
 </html>
