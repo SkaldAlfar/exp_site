@@ -81,6 +81,14 @@ header {
     text-align: center;
     text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.911); /* Add shadow for better readability */
 }
+#prompt {
+    max-width: 600px;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    text-shadow: #9E8FBC 0px 0px 10px;
+}
 
 .split-content {
     display: flex;

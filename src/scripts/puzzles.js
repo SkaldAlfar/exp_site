@@ -59,3 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // Handle button click
   document.getElementById("submitBtn").addEventListener("click", handleSubmission);
 });
+
+// Submit button styling
+document.getElementById('submitBtn').style.background = 'black';
+document.getElementById('submitBtn').style.color = 'white';
+document.getElementById('submitBtn').style.borderColor = '#9E8FBC';
+document.getElementById('submitBtn').style.borderRadius = '6px';
+document.getElementById('submitBtn').style.padding = '0.5em 1.5em';
+document.getElementById('submitBtn').style.cursor = 'pointer';
+document.getElementById('submitBtn').style.boxShadow = '0px 0px 6px rgba(239, 239, 239, 0.67)';
+document.getElementById('submitBtn').addEventListener('mouseover', function() {
+  this.style.background = '#9E8FBC';
+  this.style.color = 'black';
+});
+document.getElementById('submitBtn').addEventListener('mouseout', function() {
+  this.style.background = 'black';
+  this.style.color = 'white';
+});
