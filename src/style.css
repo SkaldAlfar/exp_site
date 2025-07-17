@@ -72,7 +72,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('/src/assets/challenger-stands-front-spooky-castle-illustration_purple.jpg') no-repeat center center;
+    background: url('https://exp-website-images.s3.us-east-2.amazonaws.com/challenger-stands-front-spooky-castle-illustration_purple.jpg') no-repeat center center;
     background-size: cover;
 }
 .landing h1 {
@@ -95,7 +95,7 @@ header {
     justify-content: center; /* Center everything vertically */
     text-align: center; /* Center-align the text */
     gap: 20px; /* Add spacing between the title and the carousel */
-    background: url('assets/magician-walks-magical-tree-houses-illustration_purple.jpg') no-repeat center center;
+    background: url('https://exp-website-images.s3.us-east-2.amazonaws.com/magician-walks-magical-tree-houses-illustration_purple.jpg') no-repeat center center;
     background-size: cover;
     height: 100%; /* Ensure the left section fills the parent's height */
     width: 60vw;
@@ -111,7 +111,7 @@ header {
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center content horizontally */
     justify-content: flex-start; /* Align content to the top */
-    background: url('assets/angel-quiet-primeval-forest-digital-painting_purple.jpg') no-repeat center center;
+    background: url('https://exp-website-images.s3.us-east-2.amazonaws.com/angel-quiet-primeval-forest-digital-painting_purple.jpg') no-repeat center center;
     background-size: cover;
     height: 100%; /* Ensure the right section fills the parent's height */
     width: 40vw; /* Adjust width to fit the layout */
