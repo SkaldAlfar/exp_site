@@ -58,6 +58,7 @@ header {
 }
 .logo {
     margin: 0 40px; /* Add spacing around the logo */
+    z-index: 1000; /* Ensure the logo is above other elements */
 }
 .logo img {
     height: 100px; /* Adjust logo size */
@@ -65,7 +66,6 @@ header {
     width: auto; /* Maintain aspect ratio */
     margin-top: -70px;
 }
-
 
 .landing {
     display: flex;
