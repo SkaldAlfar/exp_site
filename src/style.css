@@ -66,6 +66,12 @@ header {
     width: auto; /* Maintain aspect ratio */
     margin-top: -70px;
 }
+.mobile-navbar {
+    display: none; /* Hide mobile navbar by default */
+}
+.mobile-navbar-toggle {
+    display: none; /* Hide mobile navbar toggle by default */
+}
 
 .landing {
     display: flex;
@@ -439,4 +445,90 @@ footer {
 html {
     scrollbar-width: thin;
     scrollbar-color: #9E8FBC #000;
+}
+
+@media only screen and (max-width: 900px) {
+    .landing h1 {
+        font-size: 5.5rem; /* Adjust heading size for smaller screens */
+        margin-top: -100px;
+    }
+    .index-title{
+        font-size: 8rem !important;
+    }
+
+    .nav-links {
+        display: none; /* Hide desktop nav links on small screens */
+    }
+
+    .mobile-navbar {
+        padding-top: 20px;
+        display: flex;
+        background-color: #000;
+    }
+    /* Hamburger button styles for mobile */
+    .mobile-navbar-toggle {
+        display: block;
+        position: sticky;
+        z-index: 2000;
+        background: none;
+        border: none;
+        padding-left: 20px;
+        padding-top: 20px;
+        cursor: pointer;
+        margin-bottom: -40px;
+    }
+    .mobile-navbar-toggle img {
+        width: 44px;
+        height: 44px;
+        display: block;
+    }
+    .mobile-nav-links {
+        align-items: center;
+    }
+    .bar {
+        display: block;
+        padding: 10px 20px;
+        font-size: x-large;
+        color: #e0e0e0; /* Light gray text */
+        font-weight: bold;
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s;
+    }
+
+    .logo img {
+        height: 120px; /* Adjust logo size for mobile */
+        margin-top: -80px; /* Adjust logo position for mobile */
+    }
+    
+    .split-content .left-content {
+        display: none; /* Hide left content on small screens */
+    }
+    .split-content .right-content {
+        width: 100vw; /* Make right content full width on small screens */
+    }
+
+    /* Align sections in footer-split vertically here */
+    .footer-split {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .footer-content, .footer-images {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .social-icons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 18px;
+        margin: 20px 0 30px 0;
+        justify-items: center;
+        align-items: center;
+    }
+    .social-icons a {
+        width: 48px;
+        height: 48px;
+    }
 }
