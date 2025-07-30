@@ -14,13 +14,29 @@
 
 <body>
     <header>
+        <div class="mobile-navbar-toggle">
+            <img class="hamburger-icon" src="https://img.icons8.com/?size=100&id=36389&format=png&color=694A9E" alt="Mobile Menu Icon" class="hamburger-icon">
+        </div>
+        <nav class="mobile-navbar">
+            <ul class="mobile-nav-links">
+                <li><a href="campaign.html" class="bar">Campaign</a></li>
+                <li><a href="characters.html" class="bar">Characters</a></li>
+                <li><a href="players.html" class="bar">Players</a></li>
+                <li><a href="mizani.html" class="bar">The Continent: Mizani</a></li>
+                <li><a href="mtg.html" class="bar">MtG</a></li>
+                <li><a href="https://www.drivethrurpg.com/en/product/498979/daggerheart-corebook-nexus-pdf?src=demiplanedaggerheartlisting&affiliate_id=4738976" class="bar">Supplements</a></li> <!-- Make this link to DTRPG -->
+                <li><a href="puzzles.html" class="bar">Puzzles</a></li>
+                <li><a href="community.html" class="bar">Community</a></li>
+                <li><a href="about.html" class="bar">About</a></li>
+            </ul>
+        </nav>
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="dropdown">
                     <a href="campaign.html" class="campaign-btn">Campaign</a>
                     <ul class="dropdown-content">
                         <li><a href="characters.html">Characters</a></li>
-                        <li><a href="sessions.html">Sessions</a></li>
+                        <li><a href="players.html">Players</a></li>
                         <li><a href="mizani.html">The Continent: Mizani</a></li>
                     </ul>
                 </li>
@@ -106,6 +122,8 @@
         </section>
     </footer>
 
-    <script src="../scripts/puzzles.js" defer></script>
+    <script src="scripts/mobileMenu.js"></script>
+    <script src="scripts/puzzles.js" defer></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
