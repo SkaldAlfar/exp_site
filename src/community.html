@@ -23,7 +23,7 @@
                 <li><a href="players.html" class="bar">Players</a></li>
                 <li><a href="mizani.html" class="bar">The Continent: Mizani</a></li>
                 <li><a href="mtg.html" class="bar">MtG</a></li>
-                <li><a href="https://www.drivethrurpg.com/en/product/498979/daggerheart-corebook-nexus-pdf?src=demiplanedaggerheartlisting&affiliate_id=4738976" class="bar">Supplements</a></li> <!-- Make this link to DTRPG -->
+                <li><a href="supplements.html" class="bar">Supplements</a></li> <!-- Make this link to DTRPG -->
                 <li><a href="puzzles.html" class="bar">Puzzles</a></li>
                 <li><a href="community.html" class="bar">Community</a></li>
                 <li><a href="about.html" class="bar">About</a></li>
@@ -40,7 +40,7 @@
                     </ul>
                 </li>
                 <li><a href="mtg.html">MtG</a></li>
-                <li><a href="https://www.drivethrurpg.com/en/product/498979/daggerheart-corebook-nexus-pdf?src=demiplanedaggerheartlisting&affiliate_id=4738976">Supplements</a></li> <!-- Make this link to DTRPG -->
+                <li><a href="supplements.html">Supplements</a></li> <!-- Make this link to DTRPG -->
             </ul>
             <div class="logo">
                 <a href="index.html">
@@ -57,7 +57,46 @@
 
     <main>
         <section class="landing">
-            <h1>Community</h1>
+            <div class="landing-div" style="text-shadow: black 0px 0px 7px; width: 85%;">
+                <h1><br><br><br><br><br>Community</h1>
+
+                <h2 style="color: white; text-align: center; font-size: xxx-large;">Join Our Discord</h2>
+                <p style="color: white; text-align: center; font-size: large;">Looking for some other like-minded folks who enjoy tabletop games such as D&D, Daggerheart, and Magic the Gathering? Then you'll love meeting people on the EXP Discord!</p>
+                <div style="display: flex; justify-content: center; padding: 2.5rem;">
+                    <a href="https://discord.gg/XCdZ4hrQtv"><button id="discBtn">Join EXP Discord Server</button></a>
+                </div>
+                <script>
+                    // Submit button styling
+                    document.getElementById('discBtn').style.background = 'black';
+                    document.getElementById('discBtn').style.fontSize = 'x-large';
+                    document.getElementById('discBtn').style.color = 'white';
+                    document.getElementById('discBtn').style.borderColor = '#9E8FBC';
+                    document.getElementById('discBtn').style.borderRadius = '6px';
+                    document.getElementById('discBtn').style.padding = '0.5em 1.5em';
+                    document.getElementById('discBtn').style.cursor = 'pointer';
+                    document.getElementById('discBtn').style.boxShadow = '0px 0px 6px rgba(239, 239, 239, 0.67)';
+                    document.getElementById('discBtn').addEventListener('mouseover', function() {
+                    this.style.background = '#9E8FBC';
+                    this.style.color = 'black';
+                    });
+                    document.getElementById('discBtn').addEventListener('mouseout', function() {
+                    this.style.background = 'black';
+                    this.style.color = 'white';
+                    });
+                </script>
+
+                <h2 style="color: white; text-align: center; font-size: xxx-large;">Find a Local Hobby Shop</h2>
+                <p style="color: white; text-align: center; font-size: large;">Discover hobby shops near you to explore new games and connect with the community.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyANUmbRNX-3Sm1iQiMTBWeFFHj-1Axowuo&q=hobby+shop"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
         
     </main>
