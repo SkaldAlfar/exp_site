@@ -21,7 +21,7 @@ function showGifDialog(gifUrl) {
 
   // Create dialog box
   const dialog = document.createElement('div');
-  dialog.style.backgroundColor = '#fff';
+  dialog.style.backgroundColor = '#000';
   dialog.style.padding = '20px';
   dialog.style.borderRadius = '10px';
   dialog.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
@@ -31,7 +31,8 @@ function showGifDialog(gifUrl) {
 
   // Add Text
   const text = document.createElement('h1');
-  text.style.color = "white"
+  text.style.fontSize = "24px";
+  text.style.color = "white";
   text.style.padding = '20px';
   text.style.textAlign = 'center';
 
