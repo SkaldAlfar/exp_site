@@ -100,6 +100,22 @@ header {
     text-shadow: #9E8FBC 0px 0px 10px;
 }
 
+.download-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    box-shadow: 0px 0px 6px rgba(239, 239, 239, 0.67);
+    border-radius: 8px;
+    font-size: x-large;
+}
+.download-button:hover {
+    background-color: #9E8FBC; /* Change background on hover */
+    color: black; /* Change text color on hover */
+    text-decoration: none;
+    box-shadow: 0px 0px 12px rgba(239, 239, 239, 0.87);
+}
+
 .split-content {
     display: flex;
     justify-content: space-between;
